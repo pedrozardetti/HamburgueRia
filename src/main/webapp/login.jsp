@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 <div class="container">
@@ -18,7 +18,7 @@
     </div>
     <div class="form-container">
         <div class="logo">
-            <img src="img/Logo.png" alt="Logo da Hamburgueria"/>
+           <h1>Boas-vindas!</h1>
         </div>
         <form action="/login" method="post">
             <div class="input-group">
@@ -27,17 +27,18 @@
             </div>
             <div class="input-group">
                 <label for="senha">Senha</label>
-                <input type="Senha" id="senha" name="senha" placeholder="Insira a senha" required/>
-                <span>ou cadastre-se</span>
+                <input type="password" id="senha" name="senha" placeholder="Insira a senha" required/>
+                <span class="inline-text">
+                    <span class="gray-text">ou </span>
+                    <span class="highlight-text">cadastre-se</span>
+                </span>
             </div>
             <div class="input-group">
                 <button type="submit">Sign in</button>
             </div>
         </form>
     </div>
-
 </div>
-
-
 </body>
 </html>
+
