@@ -15,7 +15,7 @@ body {
 }
 
 .image {
-    width: 50%;
+    width: 45%;
     height: 100%;
     float: right;
 }
@@ -27,18 +27,21 @@ body {
 
 
 .form-container {
-    width: 50%;
+    width: 55%;
     height: 100%;
     text-align: center;
+    margin-left: 250px;
 }
 
 .form-container .logo img {
-    width: 381px; /* Altere conforme necessário */
+    width: 360px;
     height: 200px;
-    margin-top: 46px;
+    margin-top: 20px;
+    margin-right: 124px;
 }
 
 .input-group {
+    margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 84px;
     display: flex;
@@ -46,30 +49,68 @@ body {
     font-size: 20px;
     font-family: "InriaSans Regular";
     justify-content: center;
+
 }
 
 .input-group #nome {
     border-radius: 10px;
     width: 448px;
     height: 67px;
+    background-color: #EFEFEF;
+    border: none;
+    text-indent: 16px;
 }
 
 .input-group #email {
     border-radius: 10px;
     width: 448px;
     height: 67px;
+    background-color: #EFEFEF;
+    border: none;
+    text-indent: 16px;
 }
 
 .input-group #senha {
     border-radius: 10px;
     width: 448px;
     height: 67px;
+    background-color: #EFEFEF;
+    border: none;
+    text-indent: 16px;
 }
 
 .input-group #confirmar-senha {
     border-radius: 10px;
     width: 448px;
     height: 67px;
+    background-color: #EFEFEF;
+    border: none;
+    text-indent: 16px;
+}
+
+.input-group button {
+    width: 448px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: "InriaSans Bold";
+    font-size: 18px;
+    background-color: #FEB028;
+    margin-top: 38px;
+}
+
+.input-group #nome::placeholder, #email::placeholder, #senha::placeholder, #confirmar-senha::placeholder {
+    color: #A6A6A6;
+    font-size: 18px;
+    font-family: 'InriaSans Bold';
+
+}
+
+.input-group label {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 
