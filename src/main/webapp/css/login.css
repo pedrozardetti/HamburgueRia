@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'InriaSans Bold';
+    src: url("../fonts/InriaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'InriaSans Regular';
+    src: url("../fonts/InriaSans-Regular.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FBFBFB;
+
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.form-container {
+    width: 50%;
+    height: 100%;
+
+}
+
+
+.container {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.logo {
+    margin-left: 84px;
+    margin-bottom: 80px;
+    margin-top: 65px;
+    font-family: "InriaSans Bold";
+    color: #FEB028;
+    font-size: 26px;
+
+}
+
+.input-group {
+    margin-bottom: 40px;
+    margin-left: 84px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "InriaSans Regular";
+    justify-content: center;
+
+}
+
+.input-group #email {
+    width: 448px;
+    height: 67px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    margin-top: 12px;
+    text-indent: 16px;
+
+}
+
+.input-group #email::placeholder, #senha::placeholder {
+    color: #A6A6A6;
+    font-size: 18px;
+    font-family: 'InriaSans Bold';
+
+}
+
+.input-group #senha {
+    width: 448px;
+    height: 67px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    margin-top: 12px;
+    text-indent: 16px;
+}
+
+
+.input-group label {
+    margin-left: 10px;
+}
+
+.input-group button {
+    width: 448px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: "InriaSans Bold";
+    font-size: 18px;
+    background-color: #FEB028;
+    margin-top: 64px;
+}
+
+.input-group span {
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 14px;
+    font-family: "InriaSans Bold";
+    font-size: 18px;
+}
+
+.input-group .inline-text {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+    margin-top: 14px;
+}
+
+.inline-text {
+    max-width: 100%;
+}
+
+.gray-text {
+    color: #A6A6A6;
+}
+
+.highlight-text {
+    color: #FEB028;
+}
+
+
+
+
+
