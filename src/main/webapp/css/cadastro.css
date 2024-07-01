@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'InriaSans Bold';
+    src: url("../fonts/InriaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'InriaSans Regular';
+    src: url("../fonts/InriaSans-Regular.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FBFBFB;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.form-container {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.form-container .logo img {
+    width: 381px; /* Altere conforme necessário */
+    height: 200px;
+    margin-top: 46px;
+}
+
+.input-group {
+    margin-bottom: 40px;
+    margin-left: 84px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "InriaSans Regular";
+    justify-content: center;
+}
+
+.input-group #nome {
+    border-radius: 10px;
+    width: 448px;
+    height: 67px;
+}
+
+.input-group #email {
+    border-radius: 10px;
+    width: 448px;
+    height: 67px;
+}
+
+.input-group #senha {
+    border-radius: 10px;
+    width: 448px;
+    height: 67px;
+}
+
+.input-group #confirmar-senha {
+    border-radius: 10px;
+    width: 448px;
+    height: 67px;
+}
+
+
+
