@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <div class="image">
-        <img src="img/LoginImage.png" alt="Hamburguer Gigante"/>
+        <img src="img/BurgerLogin.png" alt="Hamburguer Gigante"/>
     </div>
     <div class="form-container">
         <div class="logo">
