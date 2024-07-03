@@ -14,12 +14,9 @@
 <body>
 
 <div class="container">
-    <div class="image">
-        <img src="img/Cadastro.png" alt="Dois Hamburgueres Grandes"/>
-    </div>
     <div class="form-container">
         <div class="logo">
-            <img src="img/Logo.png" alt="Logo da Hamburgueria"/>
+            <h1>Cadastre-se!</h1>
         </div>
         <form action="/cadastro" method="post">
             <div class="input-group">
@@ -35,7 +32,7 @@
                 <input type="password" id="senha" name="senha" placeholder="Insira a senha" required/>
             </div>
             <div class="input-group">
-                <label for="senha">Confirme a senha</label>
+                <label for="confirmar-senha">Confirme a senha</label>
                 <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a senha" required/>
             </div>
             <div class="input-group">
@@ -43,7 +40,10 @@
             </div>
         </form>
     </div>
+    <div class="image">
+    </div>
 </div>
 
 </body>
 </html>
+
