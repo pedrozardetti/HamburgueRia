@@ -66,12 +66,12 @@ body {
 .input-group #email {
     width: 448px;
     height: 67px;
-    outline: none;
     border-radius: 10px;
     border: none;
     background-color: #EFEFEF;
     margin-top: 12px;
     text-indent: 16px;
+    outline-color: #FEB028;
 
 }
 
@@ -85,12 +85,12 @@ body {
 .input-group #senha {
     width: 448px;
     height: 67px;
-    outline: none;
     border-radius: 10px;
     border: none;
     background-color: #EFEFEF;
     margin-top: 12px;
     text-indent: 16px;
+    outline-color: #FEB028;
 }
 
 
