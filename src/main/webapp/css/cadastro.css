@@ -148,6 +148,20 @@ body {
     margin-bottom: 10px;
 }
 
+h5 {
+    font-family: "InriaSans Bold";
+    color: #FEB028;
+    font-size: 16px;
+    margin-left: 86px;
+}
+
+.span-required {
+    font-size: 12px;
+    display: none;
+    margin: 3px 0 0 1px;
+    color: red;
+}
+
 
 
 
