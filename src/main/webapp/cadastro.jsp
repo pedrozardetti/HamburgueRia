@@ -18,6 +18,7 @@
         <div class="logo">
             <h1>Cadastre-se!</h1>
         </div>
+        <h5>${requestScope.failpassword}</h5>
         <form action="/cadastro" method="post">
             <div class="input-group">
                 <label for="nome">Nome</label>
