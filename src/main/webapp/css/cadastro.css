@@ -90,6 +90,7 @@ body {
     background-color: #EFEFEF;
     border: none;
     text-indent: 16px;
+    outline-color: #FEB028;
 }
 
 .input-group #email {
@@ -99,6 +100,7 @@ body {
     background-color: #EFEFEF;
     border: none;
     text-indent: 16px;
+    outline-color: #FEB028;
 }
 
 .input-group #senha {
@@ -108,6 +110,7 @@ body {
     background-color: #EFEFEF;
     border: none;
     text-indent: 16px;
+    outline-color: #FEB028;
 }
 
 .input-group #confirmar-senha {
@@ -117,6 +120,7 @@ body {
     background-color: #EFEFEF;
     border: none;
     text-indent: 16px;
+    outline-color: #FEB028;
 }
 
 .input-group button {
