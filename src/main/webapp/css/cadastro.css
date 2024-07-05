@@ -62,6 +62,7 @@ body {
     width: 45%;
     height: 100%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .form-container .logo img {
@@ -148,19 +149,28 @@ body {
     margin-bottom: 10px;
 }
 
-h5 {
-    font-family: "InriaSans Bold";
-    color: #FEB028;
-    font-size: 16px;
-    margin-left: 86px;
-}
 
 .span-required {
     font-size: 12px;
     display: none;
-    margin-left: 2px;
     color: red;
+    font-family: "InriaSans Regular";
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 12px;
 }
+
+/* Estilos para inputs com erro */
+.input-group input.error {
+    border: 2px solid #e63636 !important;
+    outline: none;
+}
+
+.inputs:focus {
+    border-color: #FEB028;
+}
+
+
 
 
 
