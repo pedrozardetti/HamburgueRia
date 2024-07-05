@@ -158,7 +158,7 @@ h5 {
 .span-required {
     font-size: 12px;
     display: none;
-    margin: 3px 0 0 1px;
+    margin-left: 2px;
     color: red;
 }
 
