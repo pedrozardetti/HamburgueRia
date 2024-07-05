@@ -20,7 +20,6 @@
         <div class="logo">
            <h1>Boas-vindas!</h1>
         </div>
-        <h5>${requestScope.success}</h5>
         <form action="/login" method="post">
             <div class="input-group">
                 <label for="email">E-mail</label>
