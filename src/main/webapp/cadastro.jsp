@@ -18,7 +18,6 @@
         <div class="logo">
             <h1>Cadastre-se!</h1>
         </div>
-        <h5>${requestScope.failpassword}</h5>
         <form id="form" action="/cadastro" method="post">
             <div class="input-group">
                 <label for="nome">Nome</label>
@@ -65,12 +64,12 @@
     });
 
     function setError(index) {
-        campos[index].style.border = '2px solid #e63636';
+        campos[index].classList.add('error');
         spans[index].style.display = 'block';
     }
 
     function removeError(index) {
-        campos[index].style.border = '';
+        campos[index].classList.remove('error');
         spans[index].style.display = 'none';
     }
 
