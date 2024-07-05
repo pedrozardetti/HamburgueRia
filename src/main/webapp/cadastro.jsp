@@ -22,17 +22,17 @@
         <form id="form" action="/cadastro" method="post">
             <div class="input-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Insira o nome" oninput="nameValidate()" required/>
+                <input type="text" id="nome" name="nome" placeholder="Insira o nome" class="inputs required" oninput="nameValidate()"/>
                 <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
             </div>
             <div class="input-group">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Insira o e-mail" required/>
+                <input type="email" id="email" name="email" placeholder="Insira o e-mail" class="inputs required" oninput="emailValidate()"/>
                 <span class="span-required">Digite um e-mail válido</span>
             </div>
             <div class="input-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Insira a senha" required/>
+                <input type="password" id="senha" name="senha" placeholder="Insira a senha" class="inputs required" oninput=""/>
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
             <div class="input-group">
@@ -72,7 +72,15 @@
         if (campos[0].value.length < 3) {
             setError(0);
         } else {
-            console.log('VALIDADO O NOME');
+            removeError(0);
+        }
+    }
+
+    function emailValidate() {
+        if (emailRegex.test(campos[1].value)) {
+            setError(1);
+        } else {
+            removeError(1);
         }
     }
 
