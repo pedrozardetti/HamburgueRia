@@ -160,7 +160,7 @@ body {
     margin-left: 12px;
 }
 
-/* Estilos para inputs com erro */
+
 .input-group input.error {
     border: 2px solid #e63636 !important;
     outline: none;
@@ -169,6 +169,8 @@ body {
 .inputs:focus {
     border-color: #FEB028;
 }
+
+
 
 
 
