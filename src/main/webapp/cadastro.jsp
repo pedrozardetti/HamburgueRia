@@ -43,6 +43,7 @@
                 <button type="submit">Cadastrar</button>
             </div>
         </form>
+
     </div>
     <div class="image">
     </div>
@@ -56,7 +57,22 @@
     const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/;
 
     form.addEventListener("submit", (event) => {
-        event.preventDefault();
+
+        let camposVazios = false;
+        campos.forEach((campo, index) => {
+            if (campo.value.trim() === '') {
+                setError(index);
+                camposVazios = true;
+            } else {
+                removeError(index);
+            }
+        });
+
+
+        if (camposVazios) {
+            event.preventDefault();
+            return;
+        }
         nameValidate();
         emailValidate();
         mainPasswordValidate();
@@ -105,6 +121,25 @@
         } else {
             setError(3);
         }
+    }
+
+    function showSuccessMessage(message) {
+        const successMessage = document.querySelector('.success-message');
+        successMessage.textContent = message;
+        successMessage.style.display = 'block';
+    }
+
+    function showErrorMessage(message) {
+        const errorMessage = document.querySelector('.error-message');
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'block';
+    }
+
+    function hideMessages() {
+        const successMessage = document.querySelector('.success-message');
+        const errorMessage = document.querySelector('.error-message');
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
     }
 
 </script>
