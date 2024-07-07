@@ -18,7 +18,7 @@
     </div>
     <div class="form-container">
         <div class="logo">
-           <h1>Boas-vindas!</h1>
+            <h1>Boas-vindas!</h1>
         </div>
         <form action="/login" method="post">
             <div class="input-group">
@@ -40,5 +40,6 @@
     </div>
 </div>
 </body>
+
 </html>
 
