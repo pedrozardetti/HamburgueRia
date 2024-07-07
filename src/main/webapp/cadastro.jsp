@@ -10,6 +10,8 @@
 <head>
     <title>Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
+</head>
 </head>
 <body>
 
@@ -21,22 +23,26 @@
         <form id="form" action="/cadastro" method="post">
             <div class="input-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Insira o nome" class="inputs required" oninput="nameValidate()"/>
+                <input type="text" id="nome" name="nome" placeholder="Insira o nome" class="inputs required"
+                       oninput="nameValidate()"/>
                 <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
             </div>
             <div class="input-group">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Insira o e-mail" class="inputs required" oninput="emailValidate()"/>
+                <input type="email" id="email" name="email" placeholder="Insira o e-mail" class="inputs required"
+                       oninput="emailValidate()"/>
                 <span class="span-required">Digite um e-mail válido</span>
             </div>
             <div class="input-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Insira a senha" class="inputs required" oninput="mainPasswordValidate()"/>
+                <input type="password" id="senha" name="senha" placeholder="Insira a senha" class="inputs required"
+                       oninput="mainPasswordValidate()"/>
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
             <div class="input-group">
                 <label for="confirmar-senha">Confirme a senha</label>
-                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a senha" class="inputs required" oninput="comparePassword()"/>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a senha"
+                       class="inputs required" oninput="comparePassword()"/>
                 <span class="span-required">As senhas devem ser compatíveis</span>
             </div>
             <div class="input-group">
@@ -77,6 +83,7 @@
         emailValidate();
         mainPasswordValidate();
         comparePassword();
+
     });
 
     function setError(index) {
