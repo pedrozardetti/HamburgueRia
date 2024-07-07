@@ -4,6 +4,7 @@ package br.com.hamburgueria.servlet;
 import br.com.hamburgueria.model.Customer;
 import br.com.hamburgueria.model.enums.TypeCustomer;
 import br.com.hamburgueria.repository.customer.CustomerRepository;
+import br.com.hamburgueria.security.Criptografia;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/cadastro")
 public class CadastroServlet extends HttpServlet {
@@ -32,13 +34,20 @@ public class CadastroServlet extends HttpServlet {
 
         String confirmar_senha = req.getParameter("confirmar-senha");
 
+        String senhaCriptografada = null;
+        try {
+            senhaCriptografada = Criptografia.converterParaMD5(senha);
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+
         boolean confirmPassword = senha.equalsIgnoreCase(confirmar_senha);
 
         if (confirmPassword) {
             try {
-                Customer customer = new Customer(nome, email, senha, TypeCustomer.CLIENTE);
+                Customer customer = new Customer(nome, email, senhaCriptografada, TypeCustomer.CLIENTE);
                 new CustomerRepository().createCustomer(customer);
-                req.setAttribute("success", "O usuário foi cadastrado com sucesso!");
+                req.getSession().setAttribute("successMessage", "O usuário foi cadastrado com sucesso!");
                 resp.sendRedirect("/login");
                 return;
 
@@ -52,5 +61,6 @@ public class CadastroServlet extends HttpServlet {
         }
         req.setAttribute("failpassword", "As senhas não são iguais!");
         req.getRequestDispatcher("cadastro.jsp").forward(req, resp);
+
     }
 }
