@@ -42,6 +42,9 @@ public class CustomerRepository {
             preparedStatement.setString(1, email);
             ResultSet rs = preparedStatement.executeQuery();
 
+
+            // Verifica se há resultados na consulta SQL. Se houver, pega esses resultados para criar o objeto customer.
+            // Se não houver resultados, retorna null, indicando que nenhum cliente foi encontrado
             if (rs.next()) {
                 String name = rs.getString("NAME");
                 String password = rs.getString("PASSWORD");
@@ -56,6 +59,6 @@ public class CustomerRepository {
         }
 
         return customer;
-        
+
     }
 }
