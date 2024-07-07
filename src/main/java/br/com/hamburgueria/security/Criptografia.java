@@ -7,6 +7,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class Criptografia {
 
+    // Fizemos este método para converter a senha em um Hash MD5. Ele é necessário para comparar a senha fornecida com a armazenada no BD.
     public static String converterParaMD5(String senha) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
         md.update(senha.getBytes());
