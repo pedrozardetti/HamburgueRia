@@ -1,2 +1,6 @@
-package br.com.hamburgueria.repository.address;public class AddressRepository {
+package br.com.hamburgueria.repository.address;
+
+public class AddressRepository {
+
+
 }
