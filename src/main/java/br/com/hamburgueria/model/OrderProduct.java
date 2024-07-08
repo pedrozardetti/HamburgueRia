@@ -3,7 +3,7 @@ package br.com.hamburgueria.model;
 import java.util.UUID;
 
 public class OrderProduct {
-
+    //
     private UUID id;
     private UUID orderId;
     private UUID productId;
