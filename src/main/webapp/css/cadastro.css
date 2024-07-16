@@ -136,6 +136,8 @@ body {
     font-size: 18px;
     background-color: #FEB028;
     margin-top: 38px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
 }
 
 .input-group #nome::placeholder, #email::placeholder, #senha::placeholder, #confirmar-senha::placeholder {
@@ -170,6 +172,10 @@ body {
 
 .inputs:focus {
     border-color: #FEB028;
+}
+
+.submit-button:hover {
+    background-color: #FFA200;
 }
 
 
