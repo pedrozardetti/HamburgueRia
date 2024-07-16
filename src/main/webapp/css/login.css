@@ -108,6 +108,8 @@ body {
     font-size: 18px;
     background-color: #FEB028;
     margin-top: 64px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
 }
 
 .input-group span {
@@ -137,7 +139,9 @@ body {
     color: #FEB028;
 }
 
-
+.input-group button:hover {
+    background-color: #FFA200;
+}
 
 
 
