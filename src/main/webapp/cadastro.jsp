@@ -46,7 +46,7 @@
                 <span class="span-required">As senhas devem ser compatíveis</span>
             </div>
             <div class="input-group">
-                <button type="submit">Cadastrar</button>
+                <button type="submit" class="submit-button">Cadastrar</button>
             </div>
         </form>
 
