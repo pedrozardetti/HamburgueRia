@@ -34,7 +34,7 @@
                 </span>
             </div>
             <div class="input-group">
-                <button type="submit">Sign in</button>
+                <button type="submit" class="submit-button">Sign in</button>
             </div>
         </form>
     </div>
