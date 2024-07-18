@@ -24,6 +24,9 @@
                     <button>Fazer Login</button>
                 </a>
             </div>
+        </div>
+        <div class="header-image">
+            <img src="img/fundo-interna.jpg" alt="Imagem de fundo">
 
         </div>
 
