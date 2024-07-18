@@ -27,6 +27,10 @@
         </div>
         <div class="header-image">
             <img src="img/fundo-interna.jpg" alt="Imagem de fundo">
+            <div class="cardapio">
+                <h1>CARDÁPIO</h1>
+
+            </div>
 
         </div>
 
