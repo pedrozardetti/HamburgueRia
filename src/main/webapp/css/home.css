@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'InriaSans Bold';
+    src: url("../fonts/InriaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'InriaSans Regular';
+    src: url("../fonts/InriaSans-Regular.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.header-container {
+    height: 72px;
+    background-color: #2F2E2E;
+    display: flex;
+    align-items: center;
+    padding-right: 64px;
+    justify-content: flex-end;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    .options-container {
+        gap: 48px;
+        align-items: center;
+    }
+
+}
+
+.options-container {
+    display: flex;
+
+}
+
+.options-container a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-family: "InriaSans Regular";
+}
+
+.options-container button {
+    font-family: "InriaSans Regular";
+    border-radius: 6px;
+    width: 188px;
+    height: 41px;
+    font-size: 16px;
+    background-color: #FEB028;
+    color: #FBFBFB;
+    border: none;
+}
