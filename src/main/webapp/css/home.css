@@ -57,3 +57,14 @@ body {
     color: #FBFBFB;
     border: none;
 }
+
+.header-image {
+    width: 100%;
+    filter: brightness(0.4);
+
+}
+
+.header-image img {
+    width: 100%;
+    height: 310px;
+}
