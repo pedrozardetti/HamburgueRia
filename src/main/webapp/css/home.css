@@ -8,6 +8,11 @@
     src: url("../fonts/InriaSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'InriaSerif Bold';
+    src: url("../fonts/InriaSerif-Bold.ttf");
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -60,11 +65,26 @@ body {
 
 .header-image {
     width: 100%;
-    filter: brightness(0.4);
+    position: relative;
 
 }
 
 .header-image img {
     width: 100%;
     height: 310px;
+    z-index: 1;
+    position: relative;
+    filter: brightness(0.4);
+}
+
+.cardapio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FBFBFB;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: "InriaSerif Bold";
+    font-size: 26px;
 }
