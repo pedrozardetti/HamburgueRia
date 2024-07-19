@@ -40,6 +40,18 @@
             <a href="">PORÇÕES</a>
 
         </div>
+        <div class="burger-container">
+            <div class="burger-item">
+                <img src="img/BrieBurguer.jpg" alt="Hamburguer 1">
+            </div>
+            <div class="burger-item">
+                <img src="img/CarneEQueijo.jpg" alt="Hamburguer 2">
+            </div>
+            <div class="burger-item">
+                <img src="img/CatupiryComBacon.jpg" alt="Hamburguer 3">
+            </div>
+
+        </div>
     </div>
 
 </div>
