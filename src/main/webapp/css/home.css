@@ -92,6 +92,7 @@ body {
 .background {
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .types-container {
@@ -116,5 +117,34 @@ body {
     font-size: 1.5em; /* Tamanho do texto */
     padding: 10px;
     font-family: "InriaSans Regular";
+
+}
+
+.burger-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.burger-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.burger-item img {
+    width: 524px;
+    height: auto;
+    display: block;
+    margin-right: 64px;
+
 
 }
