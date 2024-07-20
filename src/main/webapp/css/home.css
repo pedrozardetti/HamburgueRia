@@ -133,18 +133,18 @@ body {
 }
 
 .burger-item {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 260px);
+    max-width: calc(33.333% - 260px);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
 
 .burger-item img {
-    width: 524px;
+    width: 360px;
     height: auto;
     display: block;
-    margin-right: 64px;
+
 
 
 }
