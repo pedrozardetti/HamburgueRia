@@ -52,6 +52,19 @@
             </div>
 
         </div>
+
+        <footer class="footer-container">
+            <div class="info-container">
+                <div class="inst-col">
+                    <h3 class="col-title">INSTITUCIONAL</h3>
+                    <ul>
+                        <li>Quem Somos</li>
+                        <li>Cardápio</li>
+                        <li>Fazer Login</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </div>
