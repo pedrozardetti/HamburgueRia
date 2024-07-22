@@ -168,3 +168,14 @@ body {
     margin-right: 125px;
 }
 
+.direitos-row {
+    display: flex;
+    font-family: "InriaSans Regular";
+    font-size: 18px;
+    height: 88px;
+    background-color: black;
+    color: #FBFBFB;
+    justify-content: center;
+    align-items: center;
+}
+
