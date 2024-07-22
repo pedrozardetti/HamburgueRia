@@ -82,8 +82,13 @@
             </ul>
         </div>
     </footer>
-    <div class="direitos-row">
+    <div class="footer-rights">
         <span>Hamburgu&Ria 2024 - Todos os direitos reservados</span>
+    </div>
+    <div class="footer-about">
+        <span>Todas as imagens são meramente ilustrativas. A Hamburgu&Ria é uma rede de franquias especializada em
+            Hambúrgueres com sabores especias como o de <br> Costela, Salmão, Duplo Bacon e entre outros. Devore na
+            unidade mais próxima de você! </span>
     </div>
 </div>
 
