@@ -64,7 +64,6 @@
     </div>
 
         <footer class="footer-container">
-            <div class="info-container">
                 <div class="inst-col">
                     <span class="inst-title">INSTITUCIONAL</span>
                     <ul>
@@ -73,7 +72,16 @@
                         <li>Fazer Login</li>
                     </ul>
                 </div>
-            </div>
+                <div class="inst-col">
+                    <span class="card-title">CARDÁPIO</span>
+                    <ul>
+                        <li>Burgers</li>
+                        <li>Bebidas</li>
+                        <li>Sobremesas</li>
+                        <li>Porções</li>
+                    </ul>
+                </div>
+            
         </footer>
     </div>
 
