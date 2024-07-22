@@ -63,28 +63,29 @@
         </div>
     </div>
 
-        <footer class="footer-container">
-                <div class="inst-col">
-                    <span class="inst-title">INSTITUCIONAL</span>
-                    <ul>
-                        <li>Quem Somos</li>
-                        <li>Cardápio</li>
-                        <li>Fazer Login</li>
-                    </ul>
-                </div>
-                <div class="inst-col">
-                    <span class="card-title">CARDÁPIO</span>
-                    <ul>
-                        <li>Burgers</li>
-                        <li>Bebidas</li>
-                        <li>Sobremesas</li>
-                        <li>Porções</li>
-                    </ul>
-                </div>
-            
-        </footer>
+    <footer class="footer-container">
+        <div class="inst-col">
+            <span class="inst-title">INSTITUCIONAL</span>
+            <ul>
+                <li>Quem Somos</li>
+                <li>Cardápio</li>
+                <li>Fazer Login</li>
+            </ul>
+        </div>
+        <div class="inst-col">
+            <span class="card-title">CARDÁPIO</span>
+            <ul>
+                <li>Burgers</li>
+                <li>Bebidas</li>
+                <li>Sobremesas</li>
+                <li>Porções</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="direitos-row">
+        <span>Hamburgu&Ria 2024 - Todos os direitos reservados</span>
     </div>
-
+</div>
 
 
 </body>
