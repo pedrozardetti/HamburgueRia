@@ -129,12 +129,32 @@ body {
 
 .inst-title {
     font-family: "InriaSans Bold";
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .footer-container {
-    *{margin:0; padding:0;}
+    display: flex;
+    margin:0;
+    padding:0;
     background-color: #252525;
     color: #FBFBFB;
     font-family: "InriaSans Regular";
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    gap: 30px;
+}
+
+.inst-col ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+    margin-top: 30px;
+    margin-left: 8px;
 }
 
