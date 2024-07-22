@@ -12,6 +12,10 @@
     font-family: 'InriaSerif Bold';
     src: url("../fonts/InriaSerif-Bold.ttf");
 }
+@font-face {
+    font-family: 'InriaSans Light';
+    src: url("../fonts/InriaSans-Light.ttf");
+}
 
 body {
     padding: 0;
@@ -168,7 +172,7 @@ body {
     margin-right: 125px;
 }
 
-.direitos-row {
+.footer-rights {
     display: flex;
     font-family: "InriaSans Regular";
     font-size: 18px;
@@ -178,4 +182,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.footer-about {
+    display: flex;
+    font-family: "InriaSans Light";
+    font-size: 18px;
+    height: 122px;
+    background-color: #FBFBFB;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
