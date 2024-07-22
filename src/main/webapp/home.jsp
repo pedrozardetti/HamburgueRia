@@ -31,8 +31,8 @@
             <h1>CARDÁPIO</h1>
         </div>
     </div>
-    <div class="background">
-        <img src="img/solid-concrete-wall-textured-backdrop.jpg" alt="Foto de fundo">
+    <div class="content-container">
+
         <div class="types-container">
             <a href="">BURGERS</a>
             <a href="">BEBIDAS</a>
@@ -50,13 +50,23 @@
             <div class="burger-item">
                 <img src="img/CatupiryComBacon.jpg" alt="Hamburguer 3">
             </div>
+            <div class="burger-item">
+                <img src="img/BrieBurguer.jpg" alt="Hamburguer 1">
+            </div>
+            <div class="burger-item">
+                <img src="img/CarneEQueijo.jpg" alt="Hamburguer 2">
+            </div>
+            <div class="burger-item">
+                <img src="img/CatupiryComBacon.jpg" alt="Hamburguer 3">
+            </div>
 
         </div>
+    </div>
 
         <footer class="footer-container">
             <div class="info-container">
                 <div class="inst-col">
-                    <h3 class="col-title">INSTITUCIONAL</h3>
+                    <span class="inst-title">INSTITUCIONAL</span>
                     <ul>
                         <li>Quem Somos</li>
                         <li>Cardápio</li>
@@ -67,7 +77,6 @@
         </footer>
     </div>
 
-</div>
 
 
 </body>
