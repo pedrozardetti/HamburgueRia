@@ -75,10 +75,18 @@
         <div class="inst-col">
             <span class="card-title">CARDÁPIO</span>
             <ul>
-                <li>Burgers</li>
-                <li>Bebidas</li>
-                <li>Sobremesas</li>
-                <li>Porções</li>
+                <a href="">
+                    <li>Burgers</li>
+                </a>
+                <a href="">
+                    <li>Bebidas</li>
+                </a>
+                <a href="">
+                    <li>Sobremesas</li>
+                </a>
+                <a href="">
+                    <li>Porções</li>
+                </a>
             </ul>
         </div>
     </footer>
