@@ -1,2 +1,4 @@
-package br.com.hamburgueria.service;public class ProductService {
+package br.com.hamburgueria.service;
+
+public class ProductService {
 }
