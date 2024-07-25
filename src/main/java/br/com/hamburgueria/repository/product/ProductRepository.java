@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
@@ -39,13 +40,16 @@ public class ProductRepository {
                 products.add(product);
 
             }
-
             con.close();
+            return products;
+
+
         } catch (Exception e) {
             System.out.println("A busca do tipo do produto não deu certo!");
+            return Collections.emptyList();
         }
 
-        return products;
+
 
     }
 }

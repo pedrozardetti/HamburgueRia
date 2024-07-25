@@ -7,9 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="css/home.css">
+
 
 </head>
 <body>
@@ -34,32 +36,28 @@
     <div class="content-container">
 
         <div class="types-container">
-            <a href="">BURGERS</a>
-            <a href="">BEBIDAS</a>
-            <a href="">SOBREMESAS</a>
-            <a href="">PORÇÕES</a>
+            <a href="/home?type=BURGERS" class="${typeSelected == 'BURGUERS' ? 'active' : ''}">
+                BURGERS
+            </a>
+            <a href="/home?type=BEBIDAS" class="${typeSelected == 'BEBIDAS' ? 'active' : ''}">
+                BEBIDAS
+            </a>
+            <a href="/home?type=SOBREMESAS" class="${typeSelected == 'SOBREMESAS' ? 'active' : ''}">
+                SOBREMESAS
+            </a>
+            <a href="/home?type=PORCOES" class="${typeSelected == 'PORCOES' ? 'active' : ''}">
+                PORÇÕES
+            </a>
 
         </div>
         <div class="burger-container">
-            <div class="burger-item">
-                <img src="img/BrieBurguer.jpg" alt="Hamburguer 1">
-            </div>
-            <div class="burger-item">
-                <img src="img/CarneEQueijo.jpg" alt="Hamburguer 2">
-            </div>
-            <div class="burger-item">
-                <img src="img/CatupiryComBacon.jpg" alt="Hamburguer 3">
-            </div>
-            <div class="burger-item">
-                <img src="img/BrieBurguer.jpg" alt="Hamburguer 1">
-            </div>
-            <div class="burger-item">
-                <img src="img/CarneEQueijo.jpg" alt="Hamburguer 2">
-            </div>
-            <div class="burger-item">
-                <img src="img/CatupiryComBacon.jpg" alt="Hamburguer 3">
-            </div>
+            <!-- Exibir produtos dinamicamente -->
+            <c:forEach var="product" items="${products}">
+                <div class="burger-item">
 
+                    <img src="${product.url}" alt="${product.name}">
+                </div>
+            </c:forEach>
         </div>
     </div>
 
@@ -75,18 +73,10 @@
         <div class="inst-col">
             <span class="card-title">CARDÁPIO</span>
             <ul>
-                <a href="">
-                    <li>Burgers</li>
-                </a>
-                <a href="">
-                    <li>Bebidas</li>
-                </a>
-                <a href="">
-                    <li>Sobremesas</li>
-                </a>
-                <a href="">
-                    <li>Porções</li>
-                </a>
+                <li>Burgers</li>
+                <li>Bebidas</li>
+                <li>Sobremesas</li>
+                <li>Porções</li>
             </ul>
         </div>
     </footer>
