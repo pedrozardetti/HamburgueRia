@@ -36,7 +36,8 @@
     <div class="content-container">
 
         <div class="types-container">
-            <a href="/home?type=BURGERS" class="${typeSelected == 'BURGUERS' ? 'active' : ''}">
+            <a href="/home?type=BURGERS" class="${typeSelected == 'BURGERS' ? 'active' : ''}">
+                <img src="${typeSelected == 'BURGERS' ? 'img/icone-burgers-hover.png' : 'img/icone-burgers.png'}" class="icon-burger"/>
                 BURGERS
             </a>
             <a href="/home?type=BEBIDAS" class="${typeSelected == 'BEBIDAS' ? 'active' : ''}">
