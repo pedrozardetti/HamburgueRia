@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Quem Somos</title>
-    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/about.css">
 
 
 </head>
@@ -32,6 +32,7 @@
             <h1>HAMBURGU&RIA</h1>
         </div>
 
+    </div>
 </div>
 
 </body>
