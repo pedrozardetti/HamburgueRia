@@ -31,8 +31,43 @@
         <div class="cardapio">
             <h1>HAMBURGU&RIA</h1>
         </div>
-
     </div>
+    <div class="content-container">
+        <div class="about-us">
+            <img src="img/about-us.png" alt="Hambúrguer da página principal">
+
+
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="inst-col">
+            <span class="inst-title">INSTITUCIONAL</span>
+            <ul>
+                <li>Quem Somos</li>
+                <li>Cardápio</li>
+                <li>Fazer Login</li>
+            </ul>
+        </div>
+        <div class="inst-col">
+            <span class="card-title">CARDÁPIO</span>
+            <ul>
+                <li>Burgers</li>
+                <li>Bebidas</li>
+                <li>Sobremesas</li>
+                <li>Porções</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-rights">
+        <span>Hamburgu&Ria 2024 - Todos os direitos reservados</span>
+    </div>
+    <div class="footer-about">
+        <span>Todas as imagens são meramente ilustrativas. A Hamburgu&Ria é uma rede de franquias especializada em
+            Hambúrgueres com sabores especias como o de <br> Costela, Salmão, Duplo Bacon e entre outros. Devore na
+            unidade mais próxima de você! </span>
+    </div>
+</div>
 </div>
 
 </body>
