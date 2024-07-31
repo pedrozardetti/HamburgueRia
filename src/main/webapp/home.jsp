@@ -41,15 +41,15 @@
                 BURGERS
             </a>
             <a href="/home?type=BEBIDAS" class="${typeSelected == 'BEBIDAS' ? 'active' : ''}">
-                <img src="${typeSelected == 'BURGERS' ? 'img/icone-bebidas-hover.png' : 'img/icone-bebidas.png'}" class="icon-bebidas"/>
+                <img src="${typeSelected == 'BEBIDAS' ? 'img/icone-bebidas-hover.png' : 'img/icone-bebidas.png'}" class="icon-bebidas"/>
                 BEBIDAS
             </a>
             <a href="/home?type=SOBREMESAS" class="${typeSelected == 'SOBREMESAS' ? 'active' : ''}">
-                <img src="${typeSelected == 'BURGERS' ? 'img/icone-sobremesas-hover.png' : 'img/icone-sobremesas.png'}" class="icon-sobremesas"/>
+                <img src="${typeSelected == 'SOBREMESAS' ? 'img/icone-sobremesas-hover.png' : 'img/icone-sobremesas.png'}" class="icon-sobremesas"/>
                 SOBREMESAS
             </a>
             <a href="/home?type=PORCOES" class="${typeSelected == 'PORCOES' ? 'active' : ''}">
-                <img src="${typeSelected == 'BURGERS' ? 'img/icone-porcoes-hover.png' : 'img/icone-porcoes.png'}" class="icon-porcoes"/>
+                <img src="${typeSelected == 'PORCOES' ? 'img/icone-porcoes-hover.png' : 'img/icone-porcoes.png'}" class="icon-porcoes"/>
                 PORÇÕES
             </a>
 
