@@ -98,16 +98,28 @@ body {
     justify-content: center; /* ou space-between conforme necessário */
     width: 100%; /* Ajuste conforme necessário */
     padding: 10px;
-    gap: 88px;
+    gap: 90px;
+    margin-top: 100px;
+
 }
 
 .types-container a {
     color: white; /* Cor do texto */
     text-decoration: none; /* Remove o sublinhado */
-    font-size: 1.5em; /* Tamanho do texto */
+    font-size: 28px; /* Tamanho do texto */
     padding: 10px;
     font-family: "InriaSans Regular";
+
 }
+
+.types-container .active {
+    color: #FFC765;
+}
+
+.icon-burger {
+    vertical-align: -4;
+}
+
 
 .burger-container {
     display: flex;
@@ -117,6 +129,7 @@ body {
     padding: 20px;
     gap: 24px; /* Espaçamento entre os itens */
     box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    margin-top: 24px;
 }
 
 .burger-item {
