@@ -99,7 +99,7 @@ body {
     width: 100%; /* Ajuste conforme necessário */
     padding: 10px;
     gap: 90px;
-    margin-top: 100px;
+    margin-top: 120px;
 
 }
 
@@ -119,6 +119,19 @@ body {
 .icon-burger {
     vertical-align: -4;
 }
+
+.icon-bebidas {
+    vertical-align: -4;
+}
+
+.icon-sobremesas {
+    vertical-align: -4;
+}
+
+.icon-porcoes {
+    vertical-align: -4;
+}
+
 
 
 .burger-container {
