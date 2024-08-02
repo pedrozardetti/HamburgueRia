@@ -20,7 +20,7 @@ public class HomeServlet extends HttpServlet {
         if (type == null) {
             type = "BURGERS";
         }
-        List<Product> products = new ProductRepository().findProductByType(type);
+        List<Product> products = new ProductRepository().findProductsByType(type);
 
         req.setAttribute("products", products);
         req.setAttribute("typeSelected", type);
