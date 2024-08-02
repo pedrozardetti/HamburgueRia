@@ -61,12 +61,15 @@
         <div class="burger-container">
             <!-- Exibir produtos dinamicamente -->
             <c:forEach var="product" items="${products}">
-                <div class="burger-item">
-
-                    <img src="${product.url}" alt="${product.name}">
-                </div>
+                <form action="/product" method="get" class="burger-form">
+                    <input name="id" type="hidden" value="${product.id}">
+                    <div class="burger-item" onclick="this.parentNode.submit();">
+                        <img src="${product.url}" alt="${product.name}">
+                    </div>
+                </form>
             </c:forEach>
         </div>
+
     </div>
 
     <footer class="footer-container">
