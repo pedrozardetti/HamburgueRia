@@ -14,7 +14,7 @@ import java.util.UUID;
 
 public class ProductRepository {
 
-    public List<Product> findProductByType (String type) {
+    public List<Product> findProductsByType(String type) {
 
         String SQL = "SELECT * FROM  PRODUCT WHERE TYPE = ?";
 
@@ -50,6 +50,37 @@ public class ProductRepository {
         }
 
 
+    }
 
+    public Product findProductById(String id) {
+
+        String SQL = "SELECT * FROM PRODUCT WHERE ID = ?";
+
+        try {
+            Connection con = ConnectionPoolConfig.getConnection();
+            PreparedStatement preparedStatement = con.prepareStatement(SQL);
+            preparedStatement.setObject(1, UUID.fromString(id));
+            ResultSet rs = preparedStatement.executeQuery();
+
+            Product product = null;
+
+            while (rs.next()) {
+
+
+                UUID idFound = UUID.fromString(rs.getString("ID"));
+                String name = rs.getString("NAME");
+                double price = rs.getDouble("PRICE");
+                TypeProduct typeProduct = TypeProduct.valueOf(rs.getString("TYPE"));
+                String url = rs.getString("URL");
+                product = new Product(idFound, name, price, typeProduct, url);
+            }
+
+            con.close();
+            return product;
+
+        } catch (Exception e) {
+            System.out.println("Não foi possível encontrar o ID deste produto!");
+            return null;
+        }
     }
 }
