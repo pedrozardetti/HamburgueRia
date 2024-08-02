@@ -95,10 +95,42 @@ body {
     padding-bottom: 60px;
 }
 
+.about-us {
+    display: flex;
+    align-items: flex-start; /* Para alinhar verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
 .about-us img {
+    max-width: 100%;
     width: 470px;
-    height: 340px;
-    align-items: center;
+    height: auto;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.about-container h3 {
+    margin: 0;
+    font-family: "InriaSans Light";
+}
+
+.about-container h2 {
+    margin: 0;
+    font-family: "InriaSans Bold";
+    color: #FEB028;
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.about-container p {
+    font-family: "InriaSans Regular";
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 
