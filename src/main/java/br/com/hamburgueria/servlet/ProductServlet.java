@@ -19,8 +19,7 @@ public class ProductServlet extends HttpServlet {
         String id = req.getParameter("id");
 
         Product product = new ProductRepository().findProductById(id);
-
-
+        
         System.out.println(product.getName());
     }
 }
