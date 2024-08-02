@@ -198,6 +198,12 @@ body {
     margin-right: 125px;
 }
 
+.inst-col a {
+    text-decoration: none;
+    color: #FBFBFB;
+}
+
+
 .footer-rights {
     display: flex;
     font-family: "InriaSans Regular";
