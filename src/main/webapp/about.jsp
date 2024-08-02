@@ -35,8 +35,14 @@
     <div class="content-container">
         <div class="about-us">
             <img src="img/about-us.png" alt="Hambúrguer da página principal">
-
-
+            <div class="about-container">
+                <h3 class="titulo-principal">Hamburgu&Ria</h3>
+                <h2>CONHEÇA NOSSA HISTÓRIA</h2>
+                <p>Tudo começou com Pedro Zardetti, um apaixonado por gastronomia que, em suas viagens e aventuras culinárias, sempre reunia seus amigos Lucas, Gustavo e Gabriel para experimentar novas receitas de hambúrgueres aos finais de semana. Pedro, conhecido como o “Maestro” dos hambúrgueres, encantava os amigos com suas criações únicas e saborosas.</p>
+                <p>Foi em um desses encontros, em uma noite especial em São Paulo, que o sonho de transformar essa paixão em um negócio começou a ganhar vida. Em 2023, após muitos testes e degustações, os amigos decidiram investir na primeira unidade da Hamburgu&Ria, localizada no coração de São Paulo.</p>
+                <p>Com uma recepção calorosa e clientes encantados pela qualidade e inovação dos hambúrgueres, a Hamburgu&Ria logo se destacou no cenário gastronômico paulistano. A confiança no sucesso era tanta que, ainda no primeiro semestre de 2015, a segunda loja foi inaugurada. A partir daí, a expansão foi inevitável.</p>
+                <p>Hoje, a Hamburgu&Ria é um nome consagrado, com 17 unidades espalhadas por seis estados brasileiros, sempre mantendo o compromisso com a excelência e a qualidade que conquistaram nossos clientes desde o início. Cada hambúrguer é uma celebração de sabor, fruto da dedicação de Pedro, Lucas, Gustavo e Gabriel, que continuam a inovar e surpreender a cada mordida.</p>
+            </div>
         </div>
     </div>
 
