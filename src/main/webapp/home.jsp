@@ -19,9 +19,9 @@
 <div class="container">
     <div class="header-container">
         <div class="options-container">
-            <a href="">Início</a>
-            <a href="">Cardápio</a>
-            <a href="">Quem somos</a>
+            <a href="home.jsp">Início</a>
+            <a href="home?type=BURGERS">Cardápio</a>
+            <a href="about.jsp">Quem somos</a>
             <a href="">
                 <button>Fazer Login</button>
             </a>
@@ -73,18 +73,18 @@
         <div class="inst-col">
             <span class="inst-title">INSTITUCIONAL</span>
             <ul>
-                <li>Quem Somos</li>
-                <li>Cardápio</li>
+                <li><a href="about.jsp">Quem Somos</a></li>
+                <li><a href="home?type=BURGERS">Cardápio</a></li>
                 <li>Fazer Login</li>
             </ul>
         </div>
         <div class="inst-col">
             <span class="card-title">CARDÁPIO</span>
             <ul>
-                <li>Burgers</li>
-                <li>Bebidas</li>
-                <li>Sobremesas</li>
-                <li>Porções</li>
+                <li><a href="home?type=BURGERS">Burgers</a></li>
+                <li><a href="home?type=BEBIDAS">Bebidas</a></li>
+                <li><a href="home?type=SOBREMESAS">Sobremesas</a></li>
+                <li><a href="home?type=PORCOES">Porções</a></li>
             </ul>
         </div>
     </footer>
