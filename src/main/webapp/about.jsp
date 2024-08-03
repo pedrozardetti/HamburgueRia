@@ -1,4 +1,4 @@
-<%--
+<%@ page import="br.com.hamburgueria.model.Product" %><%--
   Created by IntelliJ IDEA.
   User: pedro
   Date: 7/30/2024
@@ -34,7 +34,7 @@
     </div>
     <div class="content-container">
         <div class="about-us">
-            <img src="img/about-us.png" alt="Hambúrguer da página principal">
+            <img src="<%= ((Product) request.getAttribute("product")).getUrl() %>" alt="">
             <div class="about-container">
                 <h3 class="titulo-principal">Hamburgu&Ria</h3>
                 <h2>CONHEÇA NOSSA HISTÓRIA</h2>
