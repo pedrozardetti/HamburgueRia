@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'InriaSans Bold';
+    src: url("../fonts/InriaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'InriaSans Regular';
+    src: url("../fonts/InriaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'InriaSerif Bold';
+    src: url("../fonts/InriaSerif-Bold.ttf");
+}
+@font-face {
+    font-family: 'InriaSans Light';
+    src: url("../fonts/InriaSans-Light.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.header-container {
+    height: 72px;
+    background-color: #2F2E2E;
+    display: flex;
+    align-items: center;
+    padding-right: 64px;
+    justify-content: flex-end;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.options-container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.options-container a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-family: "InriaSans Regular";
+}
+
+.options-container button {
+    font-family: "InriaSans Regular";
+    border-radius: 6px;
+    width: 188px;
+    height: 41px;
+    font-size: 16px;
+    background-color: #FEB028;
+    color: #FBFBFB;
+    border: none;
+}
+
+.header-image {
+    width: 100%;
+    position: relative;
+}
+
+.header-image img {
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    position: relative;
+    filter: brightness(0.4);
+}
+
+.cardapio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FBFBFB;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: "InriaSerif Bold";
+    font-size: 26px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/img/solid-concrete-wall-textured-backdrop.jpg");
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
