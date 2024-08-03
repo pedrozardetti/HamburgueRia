@@ -145,10 +145,19 @@ body {
     margin-top: 24px;
 }
 
+.burger-form {
+    margin: 0; /* Remove margens do formulário */
+    padding: 0; /* Remove padding do formulário */
+    border: none; /* Remove borda do formulário, se houver */
+    width: 25%; /* Garante que o formulário tenha a mesma largura que o item */
+    box-sizing: border-box; /* Garante que o padding e borda sejam incluídos na largura total */
+}
+
 .burger-item {
     display: flex;
     justify-content: center;
-    width:25%;
+    width: 100%; /* Ajustado para o formulário interno */
+    cursor: pointer; /* Indica que a div é clicável */
 }
 
 .burger-item img {
@@ -188,6 +197,11 @@ body {
     margin-left: 8px;
 }
 
+.inst-col a {
+    text-decoration: none;
+    color: #FBFBFB;
+}
+
 .card-title {
     font-family: "InriaSans Bold";
     font-size: 28px;
@@ -197,12 +211,6 @@ body {
 .inst-col {
     margin-right: 125px;
 }
-
-.inst-col a {
-    text-decoration: none;
-    color: #FBFBFB;
-}
-
 
 .footer-rights {
     display: flex;
