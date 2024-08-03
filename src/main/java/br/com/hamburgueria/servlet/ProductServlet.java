@@ -18,8 +18,14 @@ public class ProductServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
 
+        // Buscar o produto no repositório
         Product product = new ProductRepository().findProductById(id);
-        
-        System.out.println(product.getName());
+
+        // Adicionar o produto ao request
+        req.setAttribute("product", product);
+
+        // Encaminhar para a página JSP
+        req.getRequestDispatcher("product.jsp").forward(req, resp);
     }
 }
+
