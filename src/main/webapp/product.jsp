@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Product</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/product.css">
 
 
 </head>
@@ -41,7 +41,9 @@
                 </h3>
                 <h2 class="name-product"><%= ((Product) request.getAttribute("product")).getName() %>
                 </h2>
-                <p>Pão da Casa, Maionese Verde, Hambúrguer, Queijo Muçarela, Queijo Brie, Geleia de Pimenta e
+                <h3 class="price-product">R$ <%= ((Product) request.getAttribute("product")).getPrice() %>
+                </h3>
+                <p>Pão DO PEIDO, Maionese Verde, Hambúrguer, Queijo Muçarela, Queijo Brie, Geleia de Pimenta e
                     Rúcula.</p>
             </div>
 
