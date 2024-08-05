@@ -97,21 +97,22 @@ body {
 
 .prod-img {
     display: flex;
-    align-items: flex-start; /* Para alinhar verticalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
 }
-
 
 .prod-img img {
     max-width: 100%;
-    width: 470px;
+    width: 100%; /* Adapte conforme necessário */
     height: auto;
+    max-width: 470px; /* Tamanho máximo da imagem */
+    object-fit: cover; /* Para ajustar a imagem dentro do contêiner */
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    width: 100%; /* Adapte conforme necessário */
+    margin-left: 20px;
 }
 
 .type-product {
@@ -125,7 +126,6 @@ body {
     font-family: "InriaSans Bold";
     color: #FEB028;
     font-size: 32px;
-    margin-bottom: 22px;
 }
 
 .about-container p {
@@ -133,7 +133,15 @@ body {
     font-size: 12px;
     margin: 0;
     margin-bottom: 10px;
+    color: #FBFBFB;
 }
+
+.about-container .price-product {
+    font-family: "InriaSans Bold";
+    color: #FBFBFB;
+    font-size: 32px;
+}
+
 
 .inst-title {
     font-family: "InriaSans Bold";
@@ -203,3 +211,4 @@ body {
     align-items: center;
     text-align: center;
 }
+
