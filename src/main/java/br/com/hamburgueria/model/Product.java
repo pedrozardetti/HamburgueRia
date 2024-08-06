@@ -11,16 +11,18 @@ public class Product {
     private double price;
     private TypeProduct type;
     private String url;
+    private String description;
 
     public Product() {
     }
 
-    public Product(UUID id, String name, double price, TypeProduct type, String url) {
+    public Product(UUID id, String name, double price, TypeProduct type, String url, String description) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.type = type;
         this.url = url;
+        this.description = description;
     }
 
     public UUID getId() {
@@ -62,4 +64,13 @@ public class Product {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
+
