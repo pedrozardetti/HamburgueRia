@@ -34,8 +34,9 @@ public class ProductRepository {
                 double price = rs.getDouble("PRICE");
                 TypeProduct typeProduct = TypeProduct.valueOf(rs.getString("TYPE"));
                 String url = rs.getString("URL");
+                String description = rs.getString("DESCRIPTION");
                 // Instancia um objeto do tipo Product com os parâmetros
-                Product product = new Product(id, name, price, typeProduct, url);
+                Product product = new Product(id, name, price, typeProduct, url, description);
                 // Adiciona essa instãncia do objeto na nossa lista
                 products.add(product);
 
@@ -72,7 +73,8 @@ public class ProductRepository {
                 double price = rs.getDouble("PRICE");
                 TypeProduct typeProduct = TypeProduct.valueOf(rs.getString("TYPE"));
                 String url = rs.getString("URL");
-                product = new Product(idFound, name, price, typeProduct, url);
+                String description = rs.getString("DESCRIPTION");
+                product = new Product(idFound, name, price, typeProduct, url, description);
             }
 
             con.close();
