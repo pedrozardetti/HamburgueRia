@@ -8,6 +8,7 @@ public class OrderProduct {
     private UUID orderId;
     private UUID productId;
     private int quantity;
+    private double price;
 
     public OrderProduct() {
     }
@@ -49,5 +50,13 @@ public class OrderProduct {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
