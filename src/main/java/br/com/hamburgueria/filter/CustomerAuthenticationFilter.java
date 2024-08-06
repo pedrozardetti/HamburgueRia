@@ -3,11 +3,12 @@ package br.com.hamburgueria.filter;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 // Filtro é aplicado em todas as requisições que o caminho começa com /admin/
-@WebFilter("/admin/*")
-public class AuthenticationFilter implements Filter {
+@WebFilter("/customer-filter/*")
+public class CustomerAuthenticationFilter implements Filter {
 
     // Inicializa o filtro. É chamado uma vez quando o filtro é criado e permite a config inicial
     @Override
@@ -19,7 +20,7 @@ public class AuthenticationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
-
+        HttpServletResponse httpServletResponse = (HttpServletResponse) response;
         // Se o usuário estiver logado, irá repassar a requisição
         if (isUserLoggedOn(httpServletRequest)) {
 
@@ -31,7 +32,7 @@ public class AuthenticationFilter implements Filter {
 
             servletRequest.setAttribute("message", "User not authenticated!");
 
-            servletRequest.getRequestDispatcher("/login.jsp").forward(httpServletRequest, response);
+            httpServletResponse.sendRedirect("/login");
         }
     }
 
