@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Product</title>
@@ -22,7 +23,15 @@
             <a href="home?type=BURGERS">Cardápio</a>
             <a href="about.jsp">Quem somos</a>
             <a href="">
-                <button>Fazer Login</button>
+                <c:set var="user" value="${sessionScope.user}" />
+                <c:choose>
+                    <c:when test="${user != null}">
+                        <span>Logado</span>
+                    </c:when>
+                    <c:otherwise>
+                        <button>Fazer Login</button>
+                    </c:otherwise>
+                </c:choose>
             </a>
         </div>
     </div>
@@ -33,18 +42,28 @@
             </h1>
         </div>
     </div>
+
     <div class="content-container">
+        <c:set var="product" value="${requestScope.product}" />
         <div class="prod-img">
-            <img src="<%= ((Product) request.getAttribute("product")).getUrl() %>" alt="">
+            <img src="${product.url}" alt="">
             <div class="about-container">
-                <h3 class="type-product"><%= ((Product) request.getAttribute("product")).getType() %>
+                <h3 class="type-product">${product.type}
                 </h3>
-                <h2 class="name-product"><%= ((Product) request.getAttribute("product")).getName() %>
+                <h2 class="name-product">${product.name}
                 </h2>
-                <h3 class="price-product">R$ <%= ((Product) request.getAttribute("product")).getPrice() %>
+                <h3 class="price-product">R$ ${product.price}
                 </h3>
-                <p>Pão DO PEIDO, Maionese Verde, Hambúrguer, Queijo Muçarela, Queijo Brie, Geleia de Pimenta e
-                    Rúcula.</p>
+                <form action="/customer-filter/order-product" method="post" >
+                <input name="quantity" type="text"/>
+                <input name="product_id" type="hidden" value="${product.id}"/>
+                    <input name="price" type="hidden" value="${product.price}"/>
+                <p>${product.description}</p>
+
+                <button type="submit">
+                    Adicionar ao Carrinho
+                </button>
+                </form>
             </div>
 
         </div>
