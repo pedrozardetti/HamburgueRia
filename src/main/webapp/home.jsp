@@ -23,8 +23,17 @@
             <a href="home?type=BURGERS">Cardápio</a>
             <a href="about.jsp">Quem somos</a>
             <a href="">
-                <button>Fazer Login</button>
+                <c:set var="user" value="${sessionScope.user}" />
+                <c:choose>
+                    <c:when test="${user != null}">
+                        <span>Logado</span>
+                    </c:when>
+                    <c:otherwise>
+                        <button>Fazer Login</button>
+                    </c:otherwise>
+                </c:choose>
             </a>
+
         </div>
     </div>
     <div class="header-image">
