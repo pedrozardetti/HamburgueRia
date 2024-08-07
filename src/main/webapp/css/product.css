@@ -142,6 +142,40 @@ body {
     font-size: 32px;
 }
 
+.add-cart {
+    background-color: #FEB028;
+    margin-top: 20px;
+    font-family: "InriaSans Bold";
+    color: #FBFBFB;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    display: block;
+}
+
+form {
+    display: block;
+    margin-top: 42px;
+}
+
+.quantity-form {
+    height: 32px;
+    width: 38px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-family: "InriaSans Regular";
+}
+
+
+
+
+
+
+
+
 
 .inst-title {
     font-family: "InriaSans Bold";
@@ -211,4 +245,5 @@ body {
     align-items: center;
     text-align: center;
 }
+
 
