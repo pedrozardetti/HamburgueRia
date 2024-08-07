@@ -1,20 +1,24 @@
 # Hamburgu&Ria 🍔
 
 ## 📜 Visão Geral
-Bem-vindo ao repositório do Hamburgu&Ria, um projeto de aplicação web desenvolvido para o terceiro semestre, focado em criar um sistema de gestão para uma hamburgueria. O projeto é dividido em duas visões principais: a do cliente e a do administrador.
 
-## 🧑‍💻 Visão do Cliente
-Cadastro e Login: Permite que os clientes criem uma conta e acessem o sistema.
-Pedidos: Facilita a realização de pedidos, visualização e acompanhamento.
-## 🏢 Visão do Administrador
-Gerenciamento de Produtos: Adiciona e gerencia produtos do cardápio.
-Gerenciamento de Pedidos: Visualiza e gerencia os pedidos realizados pelos clientes.
+Bem-vindo ao repositório do **Hamburgu&Ria**, um projeto de aplicação web desenvolvido para o terceiro semestre, focado em criar um sistema de gestão para uma hamburgueria. O projeto é dividido em duas visões principais: a do cliente e a do administrador. 
+
+### 🧑‍💻 Visão do Cliente
+- **Cadastro e Login**: Permite que os clientes criem uma conta e acessem o sistema.
+- **Pedidos**: Facilita a realização de pedidos, visualização e acompanhamento.
+
+### 🏢 Visão do Administrador
+- **Gerenciamento de Produtos**: Adiciona e gerencia produtos do cardápio.
+- **Gerenciamento de Pedidos**: Visualiza e gerencia os pedidos realizados pelos clientes.
+
 ## 🛠️ Tecnologias Utilizadas
-JSP: Para a criação de páginas dinâmicas do lado do servidor.
-Servlets: Para a lógica de controle e processamento de requisições.
-Maven: Para gerenciamento de dependências e construção do projeto.
-CSS: Para estilização e design das páginas.
-HTML: Para estruturação das páginas web.
+
+- **JSP**: Para a criação de páginas dinâmicas do lado do servidor.
+- **Servlets**: Para a lógica de controle e processamento de requisições.
+- **Maven**: Para gerenciamento de dependências e construção do projeto.
+- **CSS**: Para estilização e design das páginas.
+- **HTML**: Para estruturação das páginas web.
 
 ## ⚙️ Instalação
 Para configurar e explorar o projeto, siga os passos abaixo:
