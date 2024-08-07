@@ -54,13 +54,13 @@
                 </h2>
                 <h3 class="price-product">R$ ${product.price}
                 </h3>
+                <p>${product.description}</p>
                 <form action="/customer-filter/order-product" method="post" >
-                <input name="quantity" type="text"/>
+                <input class="quantity-form" name="quantity" type="text" placeholder="Qtd." required/>
                 <input name="product_id" type="hidden" value="${product.id}"/>
                     <input name="price" type="hidden" value="${product.price}"/>
-                <p>${product.description}</p>
 
-                <button type="submit">
+                <button class="add-cart" type="submit">
                     Adicionar ao Carrinho
                 </button>
                 </form>
