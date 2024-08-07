@@ -35,7 +35,7 @@ Para configurar e explorar o projeto, siga os passos abaixo:
     ```
 4. Abra seu navegador e vá para http://localhost:8080/home
 
-##🚦 Como Usar
+##🚦Como Usar
 
 Cliente:
 
