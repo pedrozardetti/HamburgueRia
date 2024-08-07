@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
+<h1>
+    Carrinho está aqui!
+</h1>
 
 </body>
 </html>
