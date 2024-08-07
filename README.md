@@ -34,18 +34,17 @@ Para configurar e explorar o projeto, siga os passos abaixo:
     mvn tomcat7:run
     ```
 4. Abra seu navegador e vá para http://localhost:8080/home
+   
 
-##🚦Como Usar
+## 🚦 Como Usar
 
-Cliente:
+- **Cliente**:
+  - **Cadastro/Login**: Use as páginas de login e cadastro para criar e acessar sua conta.
+  - **Realizar Pedidos**: Navegue pelo cardápio e faça seus pedidos através do sistema.
 
-Cadastro/Login: Use as páginas de login e cadastro para criar e acessar sua conta.
-Realizar Pedidos: Navegue pelo cardápio e faça seus pedidos através do sistema.
-Administrador:
-
-Gerenciamento de Produtos: Adicione novos produtos e gerencie o cardápio.
-Gerenciamento de Pedidos: Verifique e gerencie os pedidos dos clientes.
-
+- **Administrador**:
+  - **Gerenciamento de Produtos**: Adicione novos produtos e gerencie o cardápio.
+  - **Gerenciamento de Pedidos**: Verifique e gerencie os pedidos dos clientes.
 ## 📜 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
