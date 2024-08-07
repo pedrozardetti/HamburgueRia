@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: pedro
@@ -20,7 +21,7 @@
         <div class="options-container">
             <a href="home?type=BURGERS">Início</a>
             <a href="home?type=BURGERS">Cardápio</a>
-            <a href="about">Quem somos</a>
+            <a href="about.jsp">Quem somos</a>
             <a href="">
                 <c:set var="user" value="${sessionScope.user}" />
                 <c:choose>
@@ -28,7 +29,11 @@
                         <span>Logado</span>
                     </c:when>
                     <c:otherwise>
-                        <button>Fazer Login</button>
+                        <a href="/login">
+                        <button>
+                            Fazer Login
+                        </button>
+                        </a>
                     </c:otherwise>
                 </c:choose>
             </a>
