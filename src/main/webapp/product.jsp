@@ -26,7 +26,9 @@
                 <c:set var="user" value="${sessionScope.user}" />
                 <c:choose>
                     <c:when test="${user != null}">
-                        <span>Logado</span>
+                        <a href="cart.jsp">
+                            <img src="img/shopping-cart%20(2).png" alt="Imagem do carrinho de compras">
+                        </a>
                     </c:when>
                     <c:otherwise>
                         <a class="login-button" href="/login">
