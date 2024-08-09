@@ -193,7 +193,16 @@ body {
 
 .price-container {
     display: flex;
-    flex-direction: row;
+    max-width: 900px;
+    width: 900px;
+    font-family: "InriaSans Bold";
+    font-size: 22px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.subtotal-content {
+    color: #FEB028;
 }
 
 
