@@ -19,29 +19,28 @@
             <a href="home?type=BURGERS">Início</a>
             <a href="home?type=BURGERS">Cardápio</a>
             <a href="about.jsp">Quem somos</a>
-            <a href="">
-                <c:set var="user" value="${sessionScope.user}"/>
-                <c:choose>
-                    <c:when test="${user != null}">
-                        <a href="/cart">
-                            <img src="img/shopping-cart%20(2).png" alt="Imagem do carrinho de compras">
-                        </a>
-                    </c:when>
-                    <c:otherwise>
-                        <a href="/login">
-                            <button>
-                                Fazer Login
-                            </button>
-                        </a>
-                    </c:otherwise>
-                </c:choose>
-            </a>
+            <c:set var="user" value="${sessionScope.user}"/>
+            <c:choose>
+                <c:when test="${user != null}">
+                    <a href="/cart">
+                        <img src="img/shopping-cart%20(2).png" alt="Imagem do carrinho de compras">
+                    </a>
+                </c:when>
+                <c:otherwise>
+                    <a href="/login">
+                        <button>
+                            Fazer Login
+                        </button>
+                    </a>
+                </c:otherwise>
+            </c:choose>
         </div>
     </div>
 
     <div class="content-container">
-        <h1>Meu Carrinho</h1>
-        <div class="draw-line">
+        <div>
+            <h1>Meu Carrinho</h1>
+            <div class="draw-line"></div>
         </div>
         <div class="cart-container">
             <div class="prod-row">
@@ -52,7 +51,6 @@
                     <span class="prod-price">Preço unitário: R$11.49</span>
                 </div>
                 <img src="img/trash-2.png" alt="Botão de deletar">
-
             </div>
             <div class="prod-row">
                 <div class="prod-column">
@@ -62,7 +60,6 @@
                     <span class="prod-price">Preço unitário: R$4.29</span>
                 </div>
                 <img src="img/trash-2.png" alt="Botão de deletar">
-
             </div>
             <div class="prod-row">
                 <div class="prod-column">
@@ -73,19 +70,35 @@
                 </div>
                 <img src="img/trash-2.png" alt="Botão de deletar">
             </div>
+        </div>
+        <div class="address-container">
+            <h1 class="address-title">Endereço</h1>
+            <div class="address-list">
+                <div class="address-content">
+                    <img src="img/task.png" alt="Selected">
+                    <span>Estrada do Campo Limpo, 560 - 05777-000 <br> Bloco D2 Apto 33</span>
+                </div>
+            </div>
+            <div class="newaddress-container">
+                <h1 class="add-address">Adicionar Endereço <img src="img/add%20(4).png" alt="Adicionar"></h1>
+            </div>
+        </div>
+        <div class="price-container">
+            <span>Subtotal</span>
 
         </div>
+    </div> <!-- Fecha content-container -->
 
-
-    </div>
-    <div class="footer-rights">
-        <span>Hamburgu&Ria 2024 - Todos os direitos reservados</span>
-    </div>
-    <div class="footer-about">
-        <span>Todas as imagens são meramente ilustrativas. A Hamburgu&Ria é uma rede de franquias especializada em
-            Hambúrgueres com sabores especias como o de <br> Costela, Salmão, Duplo Bacon e entre outros. Devore na
-            unidade mais próxima de você! </span>
-    </div>
-</div>
+    <div class="footer-container">
+        <div class="footer-rights">
+            <span>Hamburgu&Ria 2024 - Todos os direitos reservados</span>
+        </div>
+        <div class="footer-about">
+            <span>Todas as imagens são meramente ilustrativas. A Hamburgu&Ria é uma rede de franquias especializada em
+                Hambúrgueres com sabores especias como o de <br> Costela, Salmão, Duplo Bacon e entre outros. Devore na
+                unidade mais próxima de você! </span>
+        </div>
+    </div> <!-- Fecha footer-container -->
+</div> <!-- Fecha container -->
 </body>
 </html>
