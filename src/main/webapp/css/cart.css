@@ -65,19 +65,19 @@ body {
 .content-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 300px;
     background-color: #F2F0EB;
-    max-width: 100%;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .content-container h1 {
     font-family: "InriaSans Bold";
     font-size: 42px;
+
 }
 
 .draw-line {
@@ -91,9 +91,10 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    gap: 24px;
+    gap: 30px;
     font-family: "InriaSans Regular";
     margin-left: 36px;
+    height: 520px;
 }
 
 .prod-row {
@@ -102,6 +103,7 @@ body {
     max-width: 900px;
     width: 900px;
     justify-content: space-between;
+
 }
 
 .prod-row img {
@@ -118,29 +120,82 @@ body {
 
 .prod-column .prod-type {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .prod-column .prod-name {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 12px;
 }
 
 .prod-column .prod-description {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: #8F8F8F;
 
 }
 
 .prod-column .prod-price {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: #FEB028;
     margin-top: 16px;
-    margin-bottom: 72px;
 }
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 900px;
+}
+
+.address-container .address-title {
+    align-self: flex-start;
+    font-size: 30px;
+}
+
+.address-content {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    width: 900px;
+    margin-left: 36px;
+    font-family: "InriaSans Regular";
+
+}
+
+.address-content img {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+
+.newaddress-container {
+    align-self: flex-start;
+    margin-top: 40px;
+
+}
+
+.newaddress-container .add-address {
+    font-size: 22px;
+}
+
+.newaddress-container img {
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .footer-rights {
     display: flex;
@@ -164,3 +219,4 @@ body {
     align-items: center;
     text-align: center;
 }
+
