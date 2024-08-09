@@ -85,6 +85,7 @@
         </div>
         <div class="price-container">
             <span>Subtotal</span>
+            <span class="subtotal-content">R$35.23</span>
 
         </div>
     </div> <!-- Fecha content-container -->
