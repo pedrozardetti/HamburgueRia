@@ -44,6 +44,8 @@ public class OrderProductServlet extends HttpServlet {
         cart.add(orderProduct);
 
         System.out.println(cart.toString());
+        System.out.println(orderProduct.toString());
+
 
         resp.sendRedirect("/home");
     }
