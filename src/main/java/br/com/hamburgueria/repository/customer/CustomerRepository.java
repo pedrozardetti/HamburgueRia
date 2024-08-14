@@ -7,6 +7,7 @@ import br.com.hamburgueria.model.enums.TypeCustomer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.UUID;
 
 public class CustomerRepository {
 
@@ -49,7 +50,8 @@ public class CustomerRepository {
                 String name = rs.getString("NAME");
                 String password = rs.getString("PASSWORD");
                 TypeCustomer type = TypeCustomer.valueOf(rs.getString("TYPE"));
-                customer = new Customer(name, email, password, type);
+                UUID id = UUID.fromString(rs.getObject("ID").toString());
+                customer = new Customer(name, email, password, type, id);
             }
 
             con.close();
