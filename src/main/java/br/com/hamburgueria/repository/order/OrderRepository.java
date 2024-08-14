@@ -10,7 +10,7 @@ import java.sql.PreparedStatement;
 public class OrderRepository {
 
     public void create(Order order) {
-        String SQL = "INSERT INTO ORDER (ID, MAX_PRICE, CREATED_AT, CUSTOMER_ID) VALUES (?, ?, ?, ?)";
+        String SQL = "INSERT INTO ORDERS (ID, MAX_PRICE, CREATED_AT, CUSTOMER_ID, ADDRESS_ID) VALUES (?, ?, ?, ?, ?)";
 
         try {
             Connection connection = ConnectionPoolConfig.getConnection();
@@ -19,6 +19,7 @@ public class OrderRepository {
             preparedStatement.setDouble(2, order.getMaxPrice());
             preparedStatement.setDate(3, (Date) order.getCreatedAt());
             preparedStatement.setObject(4, order.getCustomerId());
+            preparedStatement.setObject(5, order.getAddressId());
             preparedStatement.execute();
             System.out.println("Deu certo!");
 
