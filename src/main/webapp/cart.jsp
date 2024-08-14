@@ -43,52 +43,44 @@
             <div class="draw-line"></div>
         </div>
         <div class="cart-container">
-            <div class="prod-row">
-                <div class="prod-column">
-                    <span class="prod-type">Burgers</span>
-                    <span class="prod-name">BBQ Burger</span>
-                    <span class="prod-description">Pão Australiano, Maionese de Alho, Hambúrguer de Costela, Queijo Coalho, Molho Barbecue, Picles.</span>
-                    <span class="prod-price">Preço unitário: R$11.49</span>
+            <c:forEach var="item" items="${productsCart}">
+
+                <div class="prod-row">
+                    <div class="prod-column">
+                        <span class="prod-type">${item.type}</span>
+                        <span class="prod-name">${item.name}</span>
+                        <span class="prod-description">${item.description}</span>
+                        <span class="prod-price">${item.price}</span>
+                    </div>
+                    <img src="img/trash-2.png" alt="Botão de deletar">
                 </div>
-                <img src="img/trash-2.png" alt="Botão de deletar">
-            </div>
-            <div class="prod-row">
-                <div class="prod-column">
-                    <span class="prod-type">Porções</span>
-                    <span class="prod-name">Onion Rings</span>
-                    <span class="prod-description">Anéis de Cebola Empanados, Molho Barbecue.</span>
-                    <span class="prod-price">Preço unitário: R$4.29</span>
-                </div>
-                <img src="img/trash-2.png" alt="Botão de deletar">
-            </div>
-            <div class="prod-row">
-                <div class="prod-column">
-                    <span class="prod-type">Sobremesas</span>
-                    <span class="prod-name">Brownie com sorvete</span>
-                    <span class="prod-description">Combinação de brownie de Doce de Leite ou Nutella, com sorvete de creme e calda de chocolate.</span>
-                    <span class="prod-price">Preço unitário: R$19.45</span>
-                </div>
-                <img src="img/trash-2.png" alt="Botão de deletar">
-            </div>
-        </div>
-        <div class="address-container">
-            <h1 class="address-title">Endereço</h1>
-            <div class="address-list">
-                <div class="address-content">
-                    <img src="img/task.png" alt="Selected">
-                    <span>Estrada do Campo Limpo, 560 - 05777-000 <br> Bloco D2 Apto 33</span>
-                </div>
-            </div>
-            <div class="newaddress-container">
-                <h1 class="add-address">Adicionar Endereço <img src="img/add%20(4).png" alt="Adicionar"></h1>
-            </div>
-        </div>
-        <div class="price-container">
-            <span>Subtotal</span>
-            <span class="subtotal-content">R$35.23</span>
+            </c:forEach>
 
         </div>
-    </div> <!-- Fecha content-container -->
+        <form action="/customer-filter/order" method="post">
+            <div class="address-container">
+                <h1 class="address-title">Endereço</h1>
+                <div class="address-list">
+                    <c:forEach var="address" items="${addresses}">
+                        <div class="address-content">
+                            <input type="radio" name="selectedAddress" value="${address.id}">
+                            <span>${address.street}<br>${address.cep} - ${address.neighborhood}</span>
+                        </div>
+                    </c:forEach>
+                </div>
+
+
+            </div>
+            <div class="price-container">
+                <span>Subtotal</span>
+                <span class="subtotal-content">R$35.23</span>
+
+            </div>
+            <button type="submit">
+                Concluir Pedido
+            </button>
+        </form>
+    </div><!-- Fecha content-container -->
 
     <div class="footer-container">
         <div class="footer-rights">
