@@ -53,14 +53,14 @@ public class ProductRepository {
 
     }
 
-    public Product findProductById(String id) {
+    public Product findProductById(UUID id) {
 
         String SQL = "SELECT * FROM PRODUCT WHERE ID = ?";
 
         try {
             Connection con = ConnectionPoolConfig.getConnection();
             PreparedStatement preparedStatement = con.prepareStatement(SQL);
-            preparedStatement.setObject(1, UUID.fromString(id));
+            preparedStatement.setObject(1, id);
             ResultSet rs = preparedStatement.executeQuery();
 
             Product product = null;
@@ -68,7 +68,7 @@ public class ProductRepository {
             while (rs.next()) {
 
 
-                UUID idFound = UUID.fromString(rs.getString("ID"));
+                UUID idFound = UUID.fromString(rs.getObject("ID").toString());
                 String name = rs.getString("NAME");
                 double price = rs.getDouble("PRICE");
                 TypeProduct typeProduct = TypeProduct.valueOf(rs.getString("TYPE"));
