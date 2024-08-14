@@ -58,7 +58,7 @@ public class AddressRepository {
         }
     }
 
-    public List<Address> findAllAddressByCustomerId(String customerId) {
+    public List<Address> findAllAddressByCustomerId(UUID customerId) {
 
         String SQL = "SELECT * FROM ADDRESS WHERE CUSTOMER_ID = ?";
 
@@ -67,7 +67,7 @@ public class AddressRepository {
         try (Connection con = ConnectionPoolConfig.getConnection();
              PreparedStatement preparedStatement = con.prepareStatement(SQL)) {
 
-            preparedStatement.setString(1, customerId);
+            preparedStatement.setObject(1, customerId);
             ResultSet rs = preparedStatement.executeQuery();
 
             while (rs.next()) {
