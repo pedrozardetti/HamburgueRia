@@ -10,14 +10,17 @@ public class Order {
     private Date createdAt;
     private UUID customerId;
 
+    private UUID addressId;
+
     public Order() {
     }
 
-    public Order(UUID id, double maxPrice, Date createdAt, UUID customerId) {
+    public Order(UUID id, double maxPrice, Date createdAt, UUID customerId, UUID addressId) {
         this.id = id;
         this.maxPrice = maxPrice;
         this.createdAt = createdAt;
         this.customerId = customerId;
+        this.addressId = addressId;
     }
 
     public UUID getId() {
@@ -50,6 +53,14 @@ public class Order {
 
     public void setCustomerId(UUID customerId) {
         this.customerId = customerId;
+    }
+
+    public UUID getAddressId() {
+        return addressId;
+    }
+
+    public void setAddressId(UUID addressId) {
+        this.addressId = addressId;
     }
 
 
