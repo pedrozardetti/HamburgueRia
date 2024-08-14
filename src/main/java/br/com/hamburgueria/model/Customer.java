@@ -21,6 +21,13 @@ public class Customer {
         this.password = password;
         this.type = type;
     }
+    public Customer(String name, String email, String password, TypeCustomer type, UUID id) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.type = type;
+        this.id = id;
+    }
 
     public UUID getId() {
         return id;
