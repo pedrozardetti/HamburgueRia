@@ -50,7 +50,7 @@
                         <span class="prod-type">${item.type}</span>
                         <span class="prod-name">${item.name}</span>
                         <span class="prod-description">${item.description}</span>
-                        <span class="prod-price">${item.price}</span>
+                        <span class="prod-price">R$${item.price}</span>
                     </div>
                     <img src="img/trash-2.png" alt="Botão de deletar">
                 </div>
@@ -76,7 +76,7 @@
                 <span class="subtotal-content">R$35.23</span>
 
             </div>
-            <button type="submit">
+            <button class="finish-order" type="submit">
                 Concluir Pedido
             </button>
         </form>
