@@ -146,8 +146,6 @@ body {
 .address-container {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
     align-items: center;
     justify-content: center;
     max-width: 900px;
@@ -172,6 +170,15 @@ body {
 .address-list {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+}
+
+.address-list input {
+    margin-right: 16px;
+}
+
+.address-title {
+    padding-top: 20px;
 }
 
 .address-content img {
@@ -207,10 +214,32 @@ body {
     width: 100%;
 }
 
+
 .address-button {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+}
+
+.finish-order {
+    font-family: "InriaSans Bold";
+    font-size: 14px;
+    background-color:#FEB028;
+    color: #FBFBFB;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 24px;
+    height: 36px;
+    width: 178px;
+}
+
+.finish-order:focus {
+    border-color: #FEB028;
+}
+
+.finish-order:hover {
+    background-color: #F09900;
 }
 
 
@@ -220,8 +249,8 @@ body {
     width: 900px;
     font-family: "InriaSans Bold";
     font-size: 22px;
-    margin-top: 30px;
-    gap: 20px;
+    margin-top: 52px;
+    gap: 24px;
 }
 
 .subtotal-content {
